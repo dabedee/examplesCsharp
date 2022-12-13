@@ -34,7 +34,7 @@ namespace arrayExample1
             }
             if (flag == 0)
             {
-                Console.WriteLine("sayı dizide bulunamadı"+n1);
+                Console.WriteLine("{0} sayısı dizide bulunamadı",n1);
                 
             }
             Console.ReadLine();
