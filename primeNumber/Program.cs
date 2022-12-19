@@ -31,27 +31,54 @@ namespace primeNumber
 
             // 50 200 ARALIĞINDAKŞ ASALLAR 
 
+            //int i, j;
+            //for (i = 50; i <= 200; i++)
+            //{
+            //    if (i < 2)
+            //    {
+            //        continue;
+            //    }
+            //    bool isPrime = true;
+            //    for (j = 2; j <= i / 2; j++)
+            //    {
+            //        if (i % j == 0)
+            //        {
+            //            isPrime = false;
+            //            break;
+            //        }
+            //    }
+            //    if (isPrime)
+            //    {
+            //        Console.WriteLine(i + " ");
+            //    }
+            //}
+
+
+            // 1 100 arası asal sayılar 
             int i, j;
-            for(i = 50; i <= 200; i++)
+            for (i = 2; i < 100; i++)
             {
-                if (i < 2)
+                int sayac = 1;
+                for (j = 2; j < i; j++)
                 {
-                    continue;
-                }
-                bool isPrime = true;
-                for (j = 2; j <= i / 2; j++)
-                {
-                    if (i % j == 0)
+                    if (i%j==0)
                     {
-                        isPrime = false;
+                        sayac = 0;
                         break;
                     }
+
                 }
-                if (isPrime)
+                if (sayac==1)
                 {
-                    Console.WriteLine(i+" ");
+                    Console.WriteLine(i);
                 }
+
             }
+
+
+            
+
+
 
 
 
