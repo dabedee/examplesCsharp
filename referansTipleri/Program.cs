@@ -21,9 +21,55 @@ namespace referansTipleri
             myArr = myArr2;
             myArr2[0] = 1000;
             Console.WriteLine(myArr[0]);
-            Console.ReadLine();
+
             // array class interface referans tip dir 
+            Person person1 = new Person();
+            Person person2 = new Person();
+            
+            person1.FirstName = "deniz";
+            person2 = person1;
+            person1.FirstName = "rukiye";
+
+            Console.WriteLine(person2.FirstName);
+
+            Customer customer1 = new Customer();
+            Customer customer2 = new Customer();
+
+            Person person3 = customer;
+            
+
+            Employee employee1 = new Employee();
+            Employee employee2 = new Employee();
+           
+
+
+
+
+
+
+
+
+
+            Console.ReadLine();
 
         }
+    }
+    class Person
+    {
+        public int Id { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+
+
+
+    }
+    class Customer : Person
+    {
+        public int CreditCartNumber { get; set; }
+    }
+    class Employee : Person
+    {
+        public int EmployeeNumber { get; set; }
+
     }
 }

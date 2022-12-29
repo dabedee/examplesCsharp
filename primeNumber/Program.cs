@@ -52,31 +52,51 @@ namespace primeNumber
             //        Console.WriteLine(i + " ");
             //    }
             //}
+            //Console.ReadLine();
 
 
-            // 1 100 arası asal sayılar 
+           // 1 100 arası asal sayılar
             int i, j;
             for (i = 2; i < 100; i++)
             {
                 int sayac = 1;
                 for (j = 2; j < i; j++)
                 {
-                    if (i%j==0)
+                    if (i % j == 0)
                     {
                         sayac = 0;
                         break;
                     }
 
                 }
-                if (sayac==1)
+                if (sayac == 1)
                 {
                     Console.WriteLine(i);
                 }
 
             }
 
+            //Console.WriteLine("bir sayı giriniz");
+            //int sayi = int.Parse(Console.ReadLine());
+            //bool asal = true;
+            //for(int i = 2; i < sayi; i++)
+            //{
+            //    if (sayi%i==0)
+            //    {
+            //        asal = false;
 
-            
+            //    }
+            //}
+            //if (asal)
+            //{
+            //    Console.WriteLine("asal");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("değil");
+            //}
+
+
 
 
 
